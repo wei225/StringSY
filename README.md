@@ -43,7 +43,7 @@
 *****
 #  三.实验核心方法
  ## 1. 
-  ```
+  java```
   //输出文件保存的路径
   public static final String filepath = "D:\\format.txt";
     // 一个逗号的字符串
@@ -52,10 +52,10 @@
   private static final String PERIOD = "。\n";
     // 每句诗的长度
 private static final int SENTENCE_LENGTH = 7;
-``` 
-*****
+  ``` 
+
 ##  2.
-```
+  java```
 private static void formatAndQuery(String srcStr, String target) {
 		// 如果输入的诗词原文为空，提示错误信息结束
 		try {
@@ -65,10 +65,10 @@ private static void formatAndQuery(String srcStr, String target) {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-```
-****
+	```
+
 ##  3.
-```
+ java```
 for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
 			// 结果字符串拼接从原文截取的字符串
 			rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
