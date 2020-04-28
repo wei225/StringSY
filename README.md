@@ -121,7 +121,7 @@ class MyException extends RuntimeException {
 ```
 
 # 四.实验结果
-![]()
+![1](https://github.com/saodehen/StringSY/blob/master/1.jpg)
 # 五.实验心得
   通过本次实验，让我更深刻的理解了字符串的性质，在上机的操作过场中，发现了自己平时疏忽的细节，在以后的学习过程中会更加注意。  
   并且Java学习应该是个漫长的过程，不可心浮气躁，只有保持一个良好的心态加上不断累积的知识才能将Java学好。
