@@ -43,7 +43,7 @@
 *****
 #  三.实验核心方法
  ## 1. 
-  java```
+  (```)
   //输出文件保存的路径
   public static final String filepath = "D:\\format.txt";
     // 一个逗号的字符串
@@ -52,10 +52,10 @@
   private static final String PERIOD = "。\n";
     // 每句诗的长度
 private static final int SENTENCE_LENGTH = 7;
-  ``` 
+  (```)
 
 ##  2.
-  java```
+ (```)
 private static void formatAndQuery(String srcStr, String target) {
 		// 如果输入的诗词原文为空，提示错误信息结束
 		try {
@@ -65,10 +65,10 @@ private static void formatAndQuery(String srcStr, String target) {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-	```
+(```)
 
 ##  3.
- java```
+(```)
 for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
 			// 结果字符串拼接从原文截取的字符串
 			rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
@@ -85,10 +85,10 @@ for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
 			rsStr.append(srcStr.substring(SENTENCE_LENGTH * (srcStr.length() / SENTENCE_LENGTH)))
 					.append(PERIOD);
 		}
-    ```
-*****
+   (```)
+
 ##  4.
-```
+(```)
 if (target == null || target.length() == 0) {
 			System.out.println("统计目标字段为空！");
 			return;
@@ -109,18 +109,19 @@ if (target == null || target.length() == 0) {
 		System.out.print("目标字段为\"" + target + "\",共出现" + count + "次！");
 	}
 }
-```
-*****
+(```)
+
 ##  5.
-```
+(```)
 class MyException extends RuntimeException {
 
   public MyException(String message) {
     super(message);
   }
-  ```
-******
+(```)
+
 # 四.实验结果
 ![]()
 # 五.实验心得
-  通过本次实验，让我更深刻的理解了字符串的性质，在上机的操作过场中，发现了自己平时疏忽的细节，在以后的学习过程中会更加注意。并且Java学习应该是个漫长的过程，不可心浮气躁，只有保持一个良好的心态加上不断累积的知识才能将Java学好。
+  通过本次实验，让我更深刻的理解了字符串的性质，在上机的操作过场中，发现了自己平时疏忽的细节，在以后的学习过程中会更加注意。  
+  并且Java学习应该是个漫长的过程，不可心浮气躁，只有保持一个良好的心态加上不断累积的知识才能将Java学好。
