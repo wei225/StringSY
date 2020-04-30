@@ -1,8 +1,6 @@
 # StringSY
 
-
 # JAVA实验
-
 
 # 一.实验目的
 
