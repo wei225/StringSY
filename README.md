@@ -1,13 +1,16 @@
-# StringSY
-# JAVA实验
+StringSY
+JAVA实验
 
-# 一.实验目的  
+
+ 一.实验目的  
+
 
 掌握字符串String及其方法的使用  
 
 掌握异常处理结构  
 
-# 二.业务要求  
+ 二.业务要求  
+
 
 内容：利用已学的字符串处理知识编程完成《长恨歌》古诗的整理对齐工作，写出功能函数，并运行。达到如下功能：  
 
@@ -41,93 +44,32 @@
 
 …………
 *****
+
+
 #  三.流程图   
-！[2](https://github.com/saodehen/StringSY/blob/master/2.png)
 
 
-
-*****
 #  四.实验核心方法
- ## 1. 
-  ```java
-  //输出文件保存的路径
-  public static final String filepath = "D:\\format.txt";
-    // 一个逗号的字符串
-  private static final String COMMA = "，";
-    // 一个句号的字符串，句号后字符串换行
-  private static final String PERIOD = "。\n";
-    // 每句诗的长度
-private static final int SENTENCE_LENGTH = 7;
-```
 
-##  2.
-```java
-private static void formatAndQuery(String srcStr, String target) {
-		// 如果输入的诗词原文为空，提示错误信息结束
-		try {
-			if (srcStr == null || srcStr.length() == 0) {
-				throw new MyException("输入诗词原文为空！");
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-```
 
-##  3.
-```java
-for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
-			// 结果字符串拼接从原文截取的字符串
-			rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
-			// 因为从0开始，所以第0、2、4这类偶数的添加逗号
-			if (i % 2 == 0) {
-				rsStr.append(COMMA);
-			} else { // 1、3、5奇数添加句号和换行符
-				rsStr.append(PERIOD);
-			}
-		}
-
-		// 如果不能整除余下的原文单独成为一行
-		if (srcStr.length() % SENTENCE_LENGTH != 0) {
-			rsStr.append(srcStr.substring(SENTENCE_LENGTH * (srcStr.length() / SENTENCE_LENGTH)))
-					.append(PERIOD);
-		}
-```
-
-##  4.
-```java
-if (target == null || target.length() == 0) {
-			System.out.println("统计目标字段为空！");
-			return;
-		} else { // 否则展示目标字段
-			System.out.println("统计目标字段为是：" + target);
-		}
-
-		// 统计次数
-		int count = 0;
-		// 坐标
-		int index = 0;
-		while ((index = srcStr.indexOf(target, index)) != -1) {// 如果目标字段target在原文中存在
-			index = index + target.length();
-			count++;// 找到一次统计一次
-		}
-
-		// 输出统计结果
-		System.out.print("目标字段为\"" + target + "\",共出现" + count + "次！");
-	}
-}
-```
-
-##  5.
-```java
-class MyException extends RuntimeException {
-
-  public MyException(String message) {
-    super(message);
-  }
-```
-
+ for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
+   /
+   rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
+  
+   if (i % 2 == 0) {
+    rsStr.append(COMMA);
+   } else { 
+    rsStr.append(PERIOD);
+   }
+   
+ 
 # 五.实验结果
-![1](https://github.com/saodehen/StringSY/blob/master/1.jpg)
+
+
 # 六.实验心得
-  通过本次实验，让我更深刻的理解了字符串的性质，在上机的操作过场中，发现了自己平时疏忽的细节，在以后的学习过程中会更加注意。  
-  并且Java学习应该是个漫长的过程，不可心浮气躁，只有保持一个良好的心态加上不断累积的知识才能将Java学好。
+
+
+ 这次实验自己能够独自的编写功能了，基本掌握了字符串String及其方法的使用，还有异常处理结构。
+ 已经能够实现老师要求的功能，虽然过程有点坎坷但结果还是让人欣慰，
+ 以后还要不断地学习不断地查缺补漏，不断地完善自己。增强自己的动手能力。
+ 
