@@ -1,4 +1,4 @@
-她说她一直是他的:
+
 package gushici;
 
 
@@ -86,7 +86,7 @@ public class zifuchuan {
   // 输出结果
   System.out.println("===========
 
-她说她一直是他的:
+ 杜伟
 ====七言律诗格式==========================");
   System.out.print(rsStr);
  
