@@ -82,17 +82,19 @@
 核心代码：
 
 
- for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
-   /
-   rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
-  
-   if (i % 2 == 0) {
-    rsStr.append(COMMA);
-   } else { 
-    rsStr.append(PERIOD);
-   }
-   
 
+             for (int i = 0; i < (srcStr.length() / SENTENCE_LENGTH); i++) {
+               /
+               rsStr = rsStr.append(srcStr, SENTENCE_LENGTH * i, SENTENCE_LENGTH * (i + 1));
+
+               if (i % 2 == 0) {
+                rsStr.append(COMMA);
+               } else { 
+                rsStr.append(PERIOD);
+               }
+               
+               
+               
 # 五.实验结果
 
 
